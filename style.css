@@ -1,0 +1,120 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+} 
+ul li {
+    list-style-type: none;
+}
+
+body {
+    background-image: linear-gradient(to right top, #c4fcef, #a8efef, #90e1f0, #7fd2f1, #7ac1f0, #75c0f3, #6fc0f5, #69bff8, #52cffe, #41dfff, #46eefa, #5ffbf1);    color: white;
+    font-family: 'Poppins', sans-serif;
+    min-height: 100vh;
+    position: relative;
+}
+
+.title {
+    font-size: 2rem;
+}
+
+.header,
+.form-wrapper {
+    padding-top: 2rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+.todo-input {
+    width: 100%;
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
+}
+.wrapper {
+    max-width: 35vw;
+    margin: 0 auto;
+}
+.todo-input,
+.todo-button {
+    padding: 0.5rem;
+    font-size: 2rem;
+    border: none;
+    background: #fff;
+} 
+
+.todo-button {
+    color: #69bff8;
+    background: #fff;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.todo-button:hover {
+    background: #69bff8;
+    color: white;
+}
+
+.todo-container {
+    margin-top: 40  px;
+}
+.todo-task {
+    background: #fff;
+    color: #000;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 10px;
+}
+.todo-icons {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.delete,
+.checked {
+    background-color: transparent;
+    border: none;
+}
+.delete i,
+.checked i {
+    font-size: 35px;
+    margin: 10px;
+    transition: all 0.3s ease-in;
+}
+.delete i:hover,
+.checked i:hover {
+    font-size: 35px;
+    margin: 10px;
+}
+
+.green {
+    color: lightgreen;
+}
+.delete:hover {
+animation: anim .7s ease-in-out;
+}
+@keyframes anim {
+ 0%{
+    transform: rotate(0);
+ }  
+ 25%{
+    transform: scale(1.1);
+ } 
+ 50%{
+    transform: translateY(-10px);
+ }
+ 100%{
+    transform: translateY(5);
+ }
+}
+.checked:hover{
+    text-shadow: 0 0 20px green ;
+}
